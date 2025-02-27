@@ -1,21 +1,33 @@
 Check-Files PowerShell Function
+
 This repository contains a PowerShell function, Check-Files, designed to verify whether files exist in a specified folder with a creation date based on a configurable offset. The function integrates with a custom logging mechanism using the Write-Log function and reads its settings from an external configuration object.
 
 Overview
+
 The Check-Files function checks a given folder for files whose creation date matches a target date. The target date is determined by a numeric offset provided via a configuration object:
 
 0: Indicates today’s date.
+
 Negative values (e.g., -1, -2): Indicate files created one day, two days, etc., ago.
+
 All operational messages are logged using the custom Write-Log function.
 
 Prerequisites
+
 PowerShell version 5.1 or later (or PowerShell Core if applicable).
+
 The custom Write-Log function must be available in your session. Ensure it is defined or imported before using Check-Files.
+
 Files
+
 Check-Files.ps1: Contains the Check-Files function.
+
 config.json: Example configuration file to set folder path and date offset.
+
 README.md: This documentation file.
+
 Configuration
+
 Create or update your configuration file (e.g., config.json) to include the following settings:
 
 json
