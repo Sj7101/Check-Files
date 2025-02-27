@@ -31,8 +31,7 @@ README.md: This documentation file.
 Create or update your configuration file (e.g., config.json) to include the following settings:
 
     {
-		"FolderPath": "C:\\Path\\To\\Your\\Folder",
-	
+		"FolderPath": "C:\\Path\\To\\Your\\Folder",	
 		"DateToCheck": -2
 	}
 	
@@ -55,7 +54,7 @@ Call the Check-Files Function:
 
 With the configuration loaded, call the function as shown:
 
-Check-Files -Config $Config
+	Check-Files -Config $Config
 
 The function will scan the specified folder for files with a creation date corresponding to the offset and log the results using Write-Log.
 
@@ -77,10 +76,10 @@ Example Code
 Below is a snippet that demonstrates how to load the configuration, import logging, and call the Check-Files function:
 
 # Load the configuration
-$Config = Get-Content -Path "config.json" -Raw | ConvertFrom-Json
+	$Config = Get-Content -Path "config.json" -Raw | ConvertFrom-Json
 
 # Ensure the Write-Log function is available
-. .\Write-Log.ps1
+	. .\Write-Log.ps1
 
 # Call the Check-Files function
-Check-Files -Config $Config
+	Check-Files -Config $Config
