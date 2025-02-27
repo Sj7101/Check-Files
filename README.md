@@ -30,8 +30,6 @@ Configuration
 
 Create or update your configuration file (e.g., config.json) to include the following settings:
 
-json
-Copy
 {
     "FolderPath": "C:\\Path\\To\\Your\\Folder",
     "DateToCheck": -2
@@ -43,26 +41,23 @@ Load the Configuration:
 
 In your PowerShell session or script, load your JSON configuration file into a variable:
 
-powershell
-Copy
 $Config = Get-Content -Path "config.json" -Raw | ConvertFrom-Json
 Import or Define the Write-Log Function:
 
 Ensure your custom Write-Log function is available. For example, you might have it defined in a separate script that you dot-source:
 
-powershell
-Copy
 . .\Write-Log.ps1
+
 Call the Check-Files Function:
 
 With the configuration loaded, call the function as shown:
 
-powershell
-Copy
 Check-Files -Config $Config
+
 The function will scan the specified folder for files with a creation date corresponding to the offset and log the results using Write-Log.
 
 Custom Logging with Write-Log
+
 The Write-Log function logs messages with the following types:
 
 SYS: System messages.
