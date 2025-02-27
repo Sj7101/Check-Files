@@ -72,7 +72,7 @@ WRN: Warnings.
 
 It writes log entries to a log file (e.g., VantageFeedsLog.log) in the same directory as the script and optionally to the Windows Event Log. Ensure that the Write-Log function is correctly set up before running Check-Files.
 
-Example Code
+# Example Code
 Below is a snippet that demonstrates how to load the configuration, import logging, and call the Check-Files function:
 
 # Load the configuration
