@@ -39,19 +39,19 @@ FolderPath: The path to the folder you want to scan.
 DateToCheck: A numeric value indicating the offset from today (0 for today, -1 for yesterday, etc.).
 
 # Usage
-1. Load the Configuration:
+1.Load the Configuration:
 
 In your PowerShell session or script, load your JSON configuration file into a variable:
 
 	$Config = Get-Content -Path "config.json" -Raw | ConvertFrom-Json
 	
-2. Import or Define the Write-Log Function:
+2.Import or Define the Write-Log Function:
 
 Ensure your custom Write-Log function is available. For example, you might have it defined in a separate script that you dot-source:
 
 	. .\Write-Log.ps1
 
-3. Call the Check-Files Function:
+3.Call the Check-Files Function:
 
 With the configuration loaded, call the function as shown:
 
