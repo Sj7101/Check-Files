@@ -34,6 +34,7 @@ Create or update your configuration file (e.g., config.json) to include the foll
     "FolderPath": "C:\\Path\\To\\Your\\Folder",
     "DateToCheck": -2
 }
+
 FolderPath: The path to the folder you want to scan.
 DateToCheck: A numeric value indicating the offset from today (0 for today, -1 for yesterday, etc.).
 
