@@ -31,8 +31,11 @@ README.md: This documentation file.
 Create or update your configuration file (e.g., config.json) to include the following settings:
 
 {
+
     "FolderPath": "C:\\Path\\To\\Your\\Folder",
+	
     "DateToCheck": -2
+	
 }
 
 FolderPath: The path to the folder you want to scan.
