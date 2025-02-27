@@ -75,11 +75,11 @@ It writes log entries to a log file (e.g., VantageFeedsLog.log) in the same dire
 # Example Code
 Below is a snippet that demonstrates how to load the configuration, import logging, and call the Check-Files function:
 
-# Load the configuration
+#Load the configuration
 	$Config = Get-Content -Path "config.json" -Raw | ConvertFrom-Json
 
-# Ensure the Write-Log function is available
+#Ensure the Write-Log function is available
 	. .\Write-Log.ps1
 
-# Call the Check-Files function
+#Call the Check-Files function
 	Check-Files -Config $Config
